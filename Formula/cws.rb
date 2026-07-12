@@ -5,21 +5,21 @@
 class Cws < Formula
   desc "A CLI for managing Chrome Web Store extensions"
   homepage "https://vaughnbosu.github.io/cws-cli/"
-  version "1.1.1"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.1.1/cws_darwin_amd64.tar.gz"
-      sha256 "cf50d68e02dd1e599eb0bf44374527481ea344e402367b9ab4e7bfcd617d5c3a"
+      url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.2.0/cws_darwin_amd64.tar.gz"
+      sha256 "52671c20342f0e761c5b777303ea4bf624ab7d3eace512c796eec64aa6b35c34"
 
       define_method(:install) do
         bin.install "cws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.1.1/cws_darwin_arm64.tar.gz"
-      sha256 "6866b77f84049777b0edbe0a67ed2fe617cdadfa10fc79d322e25b6a1c798432"
+      url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.2.0/cws_darwin_arm64.tar.gz"
+      sha256 "82c8b5f16e958214bdbb5f564b80034503329f1f9c2f41772411329126b6ebfa"
 
       define_method(:install) do
         bin.install "cws"
@@ -29,15 +29,15 @@ class Cws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.1.1/cws_linux_amd64.tar.gz"
-      sha256 "a853c6860c712545e472a8199d8f3469cfbbc55a99c04cef573979c54d6a03aa"
+      url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.2.0/cws_linux_amd64.tar.gz"
+      sha256 "75b31f41a4b40939e0649ecdef5e1ab30efd4feafcd0cfe089d8001ca20cee86"
       define_method(:install) do
         bin.install "cws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.1.1/cws_linux_arm64.tar.gz"
-      sha256 "3d5a85070b5cfa6e497de999e39f31ea0aaf7175b24f2ccab55f532854838a2b"
+      url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.2.0/cws_linux_arm64.tar.gz"
+      sha256 "e4c84b7e6d00ae56b1f7a4deacc0ed8bdf8ffa354bebf52f17d17fc690a947bd"
       define_method(:install) do
         bin.install "cws"
       end
