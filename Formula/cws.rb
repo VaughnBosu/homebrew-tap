@@ -11,7 +11,7 @@ class Cws < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.3.0/cws_darwin_amd64.tar.gz"
-      sha256 "e5c3dd43110e5d03a9000ea61c1fb2a1088903df90484af9ff32eeeb50955d66"
+      sha256 "85643499603d8fc43f7219194f478d021ff14428d58e7ecf6b37b66866e461c7"
 
       define_method(:install) do
         bin.install "cws"
@@ -19,7 +19,7 @@ class Cws < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.3.0/cws_darwin_arm64.tar.gz"
-      sha256 "982626ebe398e765be41c3338735696c1482cce30f03b3d7bfe28db13198538b"
+      sha256 "16f8589e89cf42aa4733b72cbfe725bf368d05eb606107dea66f3394bed37145"
 
       define_method(:install) do
         bin.install "cws"
@@ -30,14 +30,14 @@ class Cws < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.3.0/cws_linux_amd64.tar.gz"
-      sha256 "1c13330754280412c997609f30c1de84ef6077f4d42900cdee215f3b790969fe"
+      sha256 "20d3fd2faf2d7fda283f209311a3b737c8737fc5ea548910048b3806487af38e"
       define_method(:install) do
         bin.install "cws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vaughnbosu/cws-cli/releases/download/v1.3.0/cws_linux_arm64.tar.gz"
-      sha256 "9896f37d51c6f06c527600d35f9f624f6449a1558626b1daa11db640d16c74b7"
+      sha256 "49fd11ea45bf5158c065b9eab22eb1cdf066fc99e885be72544dd94ad192dc51"
       define_method(:install) do
         bin.install "cws"
       end
