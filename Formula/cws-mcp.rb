@@ -11,7 +11,7 @@ class CwsMcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.0/cws-mcp_darwin_amd64.tar.gz"
-      sha256 "e786a5fbdede5d69d5e8242b0230a1ee45d86a9fd71c84704e992e439364fd6c"
+      sha256 "26663ace9828ebbd2900ce25de189864a7a036f783d93ae8d59226ddfdf2b4f4"
 
       define_method(:install) do
         bin.install "cws-mcp"
@@ -19,7 +19,7 @@ class CwsMcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.0/cws-mcp_darwin_arm64.tar.gz"
-      sha256 "1986f88aaea4c9a773355b2c4892f308590686106d87484c42b7b589ebfc9bdc"
+      sha256 "d0d04c35db3633d324260d0c4179c7fb7b6d91cbd3c1544288094f060982a670"
 
       define_method(:install) do
         bin.install "cws-mcp"
@@ -30,14 +30,14 @@ class CwsMcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.0/cws-mcp_linux_amd64.tar.gz"
-      sha256 "4a34550acd9815e13d6986fbd81c7259ff5dbbb0ace55f8095718b98d17a37d4"
+      sha256 "399b7327f8764a2d4f44110b1217ef1e8be4083608d510dd6a28ff4355d5764d"
       define_method(:install) do
         bin.install "cws-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.0/cws-mcp_linux_arm64.tar.gz"
-      sha256 "81e7d4a436e5ff5b5641339905a88bb9e4e587c4642a2ee0953e8b10d5f5f090"
+      sha256 "bdd98615bfeaec7a6aa37d562d47ec0e23d9e23349035ffd69b36bf5069fa9d5"
       define_method(:install) do
         bin.install "cws-mcp"
       end
