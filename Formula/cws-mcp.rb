@@ -5,21 +5,21 @@
 class CwsMcp < Formula
   desc "MCP server for managing Chrome Web Store extensions"
   homepage "https://github.com/vaughnbosu/cws-mcp"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.0/cws-mcp_darwin_amd64.tar.gz"
-      sha256 "26663ace9828ebbd2900ce25de189864a7a036f783d93ae8d59226ddfdf2b4f4"
+      url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.1/cws-mcp_darwin_amd64.tar.gz"
+      sha256 "6fad4dc774f000be64c962269d25e8cf776e3e88085c002d48c0ede266378f93"
 
       define_method(:install) do
         bin.install "cws-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.0/cws-mcp_darwin_arm64.tar.gz"
-      sha256 "d0d04c35db3633d324260d0c4179c7fb7b6d91cbd3c1544288094f060982a670"
+      url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.1/cws-mcp_darwin_arm64.tar.gz"
+      sha256 "39038f87c02253b6036f7b6562402f0cc925d1742ba745211542a557a52f2f3b"
 
       define_method(:install) do
         bin.install "cws-mcp"
@@ -29,15 +29,15 @@ class CwsMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.0/cws-mcp_linux_amd64.tar.gz"
-      sha256 "399b7327f8764a2d4f44110b1217ef1e8be4083608d510dd6a28ff4355d5764d"
+      url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.1/cws-mcp_linux_amd64.tar.gz"
+      sha256 "35c8c2f140df65bb8d8520696582e8028cc23a8ba501416ea0d5624c5ada84aa"
       define_method(:install) do
         bin.install "cws-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.0/cws-mcp_linux_arm64.tar.gz"
-      sha256 "bdd98615bfeaec7a6aa37d562d47ec0e23d9e23349035ffd69b36bf5069fa9d5"
+      url "https://github.com/vaughnbosu/cws-mcp/releases/download/v0.1.1/cws-mcp_linux_arm64.tar.gz"
+      sha256 "f4c98b8b4cfbdbe9217f011b597521ac35ac459cfbe5e108124d156c26db83f1"
       define_method(:install) do
         bin.install "cws-mcp"
       end
